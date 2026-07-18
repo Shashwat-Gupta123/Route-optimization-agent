@@ -16,7 +16,7 @@ fastapi>=0.115.0
 uvicorn[standard]>=0.30.6      # ASGI server to run the FastAPI app
  
 # --- Optimization solver ---
-ortools==9.11.4210
+ortools>=9.11,<9.16
  
 # --- HTTP calls (ORS routing, Nominatim geocoding, Open-Meteo weather) ---
 requests==2.32.3
