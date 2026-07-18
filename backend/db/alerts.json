@@ -1,0 +1,239 @@
+[
+  {
+    "alert_id": "ALRT2001",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH002",
+    "shipment_id": "SHP1005",
+    "message": "Vehicle VEH002 is running 14 min behind ETA to STR005 due to traffic near Kaushambi.",
+    "created_at": "2026-07-16T09:32:00+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": false
+  },
+  {
+    "alert_id": "ALRT2002",
+    "type": "vehicle_breakdown",
+    "severity": "critical",
+    "vehicle_id": "VEH003",
+    "shipment_id": null,
+    "message": "Vehicle VEH003 marked under maintenance before dispatch. Its assigned shipments need reassignment.",
+    "created_at": "2026-07-16T07:05:00+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2003",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH001",
+    "shipment_id": null,
+    "message": "Vehicle VEH001 is running 325 min behind ETA to DMart - Sector 62 Noida. Revised ETA 15:30.",
+    "created_at": "2026-07-16T14:56:44+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": false
+  },
+  {
+    "alert_id": "ALRT2004",
+    "type": "vehicle_breakdown",
+    "severity": "critical",
+    "vehicle_id": "VEH001",
+    "shipment_id": null,
+    "message": "Vehicle VEH001 has broken down. 2 shipment(s) need reassignment: SHP1004, SHP1006.",
+    "created_at": "2026-07-16T14:56:55+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2005",
+    "type": "urgent_order",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": "SHP1007",
+    "message": "Urgent order SHP1007 added for store STR002 (100 kg, deadline 13:00).",
+    "created_at": "2026-07-16T14:57:08+05:30",
+    "channel": [
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2006",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-02 to 2026-07-16) generated and sent to dispatch manager.",
+    "created_at": "2026-07-16T14:57:21+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2007",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH002",
+    "shipment_id": null,
+    "message": "Vehicle VEH002 is running 347 min behind ETA to More Supermarket - Kaushambi. Revised ETA 15:17.",
+    "created_at": "2026-07-16T15:09:54+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2008",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH001",
+    "shipment_id": null,
+    "message": "Vehicle VEH001 is running 556 min behind ETA to DMart - Sector 62 Noida. Revised ETA 19:21.",
+    "created_at": "2026-07-16T16:09:45+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2009",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH001",
+    "shipment_id": null,
+    "message": "Vehicle VEH001 is running 558 min behind ETA to DMart - Sector 62 Noida. Revised ETA 19:23.",
+    "created_at": "2026-07-16T16:11:18+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2010",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH001",
+    "shipment_id": null,
+    "message": "Vehicle VEH001 is running 205 min behind ETA to DMart - Sector 62 Noida. Revised ETA 13:30.",
+    "created_at": "2026-07-17T10:18:34+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2011",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-03 to 2026-07-17) generated and sent to dispatch manager.",
+    "created_at": "2026-07-17T10:36:54+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2012",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-03 to 2026-07-17) generated and sent to dispatch manager.",
+    "created_at": "2026-07-17T10:38:56+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2013",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-03 to 2026-07-17) generated and sent to dispatch manager.",
+    "created_at": "2026-07-17T10:40:51+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": true
+  },
+  {
+    "alert_id": "ALRT2014",
+    "type": "eta_deviation",
+    "severity": "warning",
+    "vehicle_id": "VEH001",
+    "shipment_id": null,
+    "message": "Vehicle VEH001 is running 268 min behind ETA to DMart - Sector 62 Noida. Revised ETA 14:33.",
+    "created_at": "2026-07-17T11:21:59+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": false
+  },
+  {
+    "alert_id": "ALRT2015",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-03 to 2026-07-17) generated and sent to dispatch manager.",
+    "created_at": "2026-07-17T11:22:28+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": false
+  },
+  {
+    "alert_id": "ALRT2016",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-04 to 2026-07-18) generated and sent to dispatch manager.",
+    "created_at": "2026-07-18T12:29:00+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": false
+  },
+  {
+    "alert_id": "ALRT2017",
+    "type": "weekly_report",
+    "severity": "info",
+    "vehicle_id": null,
+    "shipment_id": null,
+    "message": "Weekly report (2026-07-04 to 2026-07-18) generated and sent to dispatch manager.",
+    "created_at": "2026-07-18T12:31:56+05:30",
+    "channel": [
+      "email",
+      "dashboard"
+    ],
+    "acknowledged": false
+  }
+]

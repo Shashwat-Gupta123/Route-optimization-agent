@@ -1,0 +1,35 @@
+[
+  {
+    "driver_id": "DRV001",
+    "name": "Ramesh Kumar",
+    "license_number": "UP14-2019-0045213",
+    "license_expiry": "2028-03-15",
+    "phone": "+91-9811100001",
+    "shift": "06:00-14:00",
+    "status": "active",
+    "assigned_vehicle_id": "VEH001",
+    "rating": 4.6
+  },
+  {
+    "driver_id": "DRV002",
+    "name": "Suresh Yadav",
+    "license_number": "DL08-2018-0091124",
+    "license_expiry": "2027-11-02",
+    "phone": "+91-9811100002",
+    "shift": "08:00-16:00",
+    "status": "active",
+    "assigned_vehicle_id": "VEH002",
+    "rating": 4.8
+  },
+  {
+    "driver_id": "DRV003",
+    "name": "Anil Sharma",
+    "license_number": "UP16-2020-0033812",
+    "license_expiry": "2029-01-20",
+    "phone": "+91-9811100003",
+    "shift": "06:00-14:00",
+    "status": "on_leave",
+    "assigned_vehicle_id": "VEH003",
+    "rating": 4.5
+  }
+]

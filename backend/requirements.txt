@@ -1,0 +1,30 @@
+pydantic-settings>=2.5.2
+pyyaml>=6.0
+python-dotenv==1.0.1
+httpx>=0.27.1
+openai>=2.25,<3
+azure-identity>=1.15.0
+
+# --- Agent orchestration (Microsoft Agent Framework) ---
+# Use core + the OpenAI/Azure chat client only (the meta "agent-framework"
+# package pulls provider extras whose protobuf pin conflicts with ortools).
+agent-framework-core
+agent-framework-openai
+
+# --- Web framework ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6      # ASGI server to run the FastAPI app
+ 
+# --- Optimization solver ---
+ortools==9.11.4210
+ 
+# --- HTTP calls (ORS routing, Nominatim geocoding, Open-Meteo weather) ---
+requests==2.32.3
+ 
+# --- Env var loading (.env) ---
+python-dotenv==1.0.1
+ 
+# --- Data validation (used by FastAPI request/response schemas) ---
+pydantic>=2.9
+ 
+ 

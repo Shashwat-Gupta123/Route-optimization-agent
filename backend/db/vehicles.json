@@ -1,0 +1,50 @@
+[
+  {
+    "vehicle_id": "VEH001",
+    "registration_number": "UP16-GT-4521",
+    "type": "Mini Truck (Tata Ace)",
+    "capacity_kg": 750,
+    "capacity_volume_m3": 4.5,
+    "fuel_type": "Diesel",
+    "fuel_efficiency_km_per_l": 14.0,
+    "avg_speed_kmph": 35,
+    "status": "available",
+    "current_location": { "lat": 28.4744, "lon": 77.5040 },
+    "assigned_driver_id": "DRV001",
+    "last_maintenance_date": "2026-06-20",
+    "next_maintenance_due": "2026-08-20",
+    "odometer_km": 48210
+  },
+  {
+    "vehicle_id": "VEH002",
+    "registration_number": "DL01-CB-7734",
+    "type": "Pickup Van (Mahindra Bolero)",
+    "capacity_kg": 1000,
+    "capacity_volume_m3": 6.0,
+    "fuel_type": "Diesel",
+    "fuel_efficiency_km_per_l": 12.5,
+    "avg_speed_kmph": 40,
+    "status": "available",
+    "current_location": { "lat": 28.4744, "lon": 77.5040 },
+    "assigned_driver_id": "DRV002",
+    "last_maintenance_date": "2026-06-05",
+    "next_maintenance_due": "2026-08-05",
+    "odometer_km": 62890
+  },
+  {
+    "vehicle_id": "VEH003",
+    "registration_number": "UP14-BT-1190",
+    "type": "Medium Truck (Eicher 14 ft)",
+    "capacity_kg": 3500,
+    "capacity_volume_m3": 18.0,
+    "fuel_type": "Diesel",
+    "fuel_efficiency_km_per_l": 8.0,
+    "avg_speed_kmph": 32,
+    "status": "maintenance",
+    "current_location": { "lat": 28.4744, "lon": 77.5040 },
+    "assigned_driver_id": "DRV003",
+    "last_maintenance_date": "2026-07-14",
+    "next_maintenance_due": "2026-07-18",
+    "odometer_km": 91120
+  }
+]

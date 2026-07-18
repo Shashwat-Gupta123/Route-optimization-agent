@@ -1,0 +1,23 @@
+{
+  "warehouse_id": "WH001",
+  "warehouse_code": "GN-HUB-01",
+  "name": "MAQ Central Distribution Hub",
+  "address": "Plot 12, Site V, Kasna Industrial Area, Greater Noida, Uttar Pradesh",
+  "lat": 28.4744,
+  "lon": 77.5040,
+  "zone": "Delhi NCR - East",
+  "timezone": "Asia/Kolkata",
+  "operating_hours": {
+    "open": "06:00",
+    "close": "22:00"
+  },
+  "loading_docks": 4,
+  "max_concurrent_dispatch": 3,
+  "contact": {
+    "manager_name": "Warehouse Dispatch Manager",
+    "phone": "+91-9999900000",
+    "email": "dispatch.gnhub01@example-warehouse.com"
+  },
+  "created_at": "2026-01-01T00:00:00+05:30",
+  "updated_at": "2026-07-16T07:00:00+05:30"
+}

@@ -1,0 +1,248 @@
+/* ==========================================================================
+   Route Optimizer — MAQ Software brand design system
+   Executive operations dashboard: white canvas, single red accent, charcoal
+   text, minimal borders. Color tokens per the frontend requirements doc.
+   ========================================================================== */
+
+:root {
+    /* Brand + status palette */
+    --color-primary: #d6001c;
+    --color-primary-hover: #b10017;
+    --color-text: #1a1a1a;
+    --color-text-muted: #6b6b6b;
+    --color-bg: #ffffff;
+    --color-bg-subtle: #fafafa;
+    --color-border: #e5e5e5;
+    --color-success: #1e8e3e;
+    --color-warning: #d97706;
+    --color-critical: #d6001c;
+
+    /* Route plan polyline colors — deliberately outside the red/status palette */
+    --route-fastest: #2563eb;
+    --route-cheapest: #0d9488;
+    --route-balanced: #d97706;
+
+    --radius: 8px;
+    --shadow-hover: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+    font-family:
+        "Inter",
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-text);
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.1rem;
+}
+p {
+    margin: 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* --- Buttons -------------------------------------------------------------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+.btn-primary:hover:not(:disabled) {
+    background: var(--color-primary-hover);
+}
+.btn-ghost {
+    background: transparent;
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+.btn-ghost:hover:not(:disabled) {
+    border-color: var(--color-text-muted);
+}
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.btn-sm {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+/* --- Cards ---------------------------------------------------------------- */
+.card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: box-shadow 0.15s ease;
+}
+.card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+/* --- Utility -------------------------------------------------------------- */
+.text-muted {
+    color: var(--color-text-muted);
+}
+.section-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+.error-banner {
+    background: #fdecee;
+    border: 1px solid var(--color-critical);
+    color: var(--color-critical);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+.badge {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.badge-info {
+    background: #eef2ff;
+    color: #3730a3;
+}
+.badge-warning {
+    background: #fef3c7;
+    color: var(--color-warning);
+}
+.badge-critical {
+    background: #fdecee;
+    color: var(--color-critical);
+}
+.badge-success {
+    background: #e6f4ea;
+    color: var(--color-success);
+}
+.spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* --- Toasts --------------------------------------------------------------- */
+.toast-stack {
+    position: fixed;
+    top: 72px;
+    right: 20px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.toast {
+    background: var(--color-text);
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    animation: slidein 0.2s ease;
+}
+.toast-critical {
+    background: var(--color-critical);
+}
+.toast-warning {
+    background: var(--color-warning);
+}
+.toast-success {
+    background: var(--color-success);
+}
+@keyframes slidein {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Leaflet fills its container */
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

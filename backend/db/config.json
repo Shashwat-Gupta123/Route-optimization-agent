@@ -1,0 +1,53 @@
+{
+    "app_name": "Warehouse Route Planner",
+    "default_fuel_price_inr_per_l": 95.0,
+    "default_avg_service_time_min": 8,
+    "planning_horizon": {
+        "start_time": "06:00",
+        "end_time": "22:00"
+    },
+    "effectiveness_score_weights": {
+        "distance": 0.3,
+        "time": 0.3,
+        "fuel_cost": 0.25,
+        "emissions": 0.15
+    },
+    "co2_emission_factor_kg_per_km": {
+        "Mini Truck (Tata Ace)": 0.27,
+        "Pickup Van (Mahindra Bolero)": 0.3,
+        "Medium Truck (Eicher 14 ft)": 0.45
+    },
+    "cost_model": {
+        "labour_cost_per_hour_inr": 120,
+        "vehicle_wear_cost_per_km_inr": 2.5
+    },
+    "api_config": {
+        "routing_provider": "openrouteservice",
+        "routing_api_key_env_var": "OPEN_ROUTER_API_KEY",
+        "geocoding_provider": "nominatim",
+        "geocoding_user_agent": "warehouse-route-planner/1.0",
+        "weather_provider": "open-meteo",
+        "weather_api_key_env_var": null
+    },
+    "alerting": {
+        "eta_deviation_threshold_min": 10,
+        "dispatch_manager_email": "cookvinsmokesanjigerma66@gmail.com",
+        "smtp_host_env_var": "SMTP_HOST",
+        "smtp_port_env_var": "SMTP_PORT",
+        "smtp_user_env_var": "SMTP_USER",
+        "smtp_password_env_var": "SMTP_PASS",
+        "email_from_env_var": "SMTP_USER"
+    },
+    "data_files": {
+        "warehouse": "backend/db/warehouse.json",
+        "vehicles": "backend/db/vehicles.json",
+        "drivers": "backend/db/drivers.json",
+        "stores": "backend/db/stores.json",
+        "shipments": "backend/db/shipments.json",
+        "route_plans": "backend/db/route_plan_sample.json",
+        "vehicle_locations": "backend/db/vehicle_locations.json",
+        "alerts": "backend/db/alerts.json",
+        "route_history": "backend/db/route_history.json",
+        "chat_sessions": "backend/db/chat_sessions.json"
+    }
+}

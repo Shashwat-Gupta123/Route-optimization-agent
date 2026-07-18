@@ -1,0 +1,45 @@
+{
+  "note": "DEMO MODE: these are hardcoded simulated positions, not live GPS. Replace this file's source with a real Traccar feed in a later phase.",
+  "last_updated": "2026-07-17T11:21:59+05:30",
+  "vehicles": [
+    {
+      "vehicle_id": "VEH001",
+      "status": "delayed",
+      "current_location": {
+        "lat": 28.531,
+        "lon": 77.426
+      },
+      "current_speed_kmph": 0,
+      "last_stop_completed": "STR001",
+      "next_stop": "STR003",
+      "eta_next_stop": "10:05",
+      "eta_deviation_min": 70.0
+    },
+    {
+      "vehicle_id": "VEH002",
+      "status": "delayed",
+      "current_location": {
+        "lat": 28.641,
+        "lon": 77.33
+      },
+      "current_speed_kmph": 12,
+      "last_stop_completed": "STR002",
+      "next_stop": "STR005",
+      "eta_next_stop": "09:30",
+      "eta_deviation_min": 29.0
+    },
+    {
+      "vehicle_id": "VEH003",
+      "status": "maintenance",
+      "current_location": {
+        "lat": 28.4744,
+        "lon": 77.504
+      },
+      "current_speed_kmph": 0,
+      "last_stop_completed": null,
+      "next_stop": null,
+      "eta_next_stop": null,
+      "eta_deviation_min": 0
+    }
+  ]
+}

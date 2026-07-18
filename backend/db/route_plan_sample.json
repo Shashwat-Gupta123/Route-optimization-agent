@@ -1,0 +1,70 @@
+{
+  "plan_id": "PLAN-2026-07-17-001-fastest",
+  "plan_name": "fastest",
+  "warehouse_id": "WH001",
+  "generated_at": "2026-07-17T10:01:18+05:30",
+  "routes": [
+    {
+      "vehicle_id": "VEH002",
+      "driver_id": "DRV002",
+      "driver_name": "Suresh Yadav",
+      "vehicle_type": "Pickup Van (Mahindra Bolero)",
+      "stops": [
+        {
+          "store_id": "STR002",
+          "shipment_id": "SHP1007",
+          "store_name": "Reliance Fresh - Vaishali Ghaziabad",
+          "eta": "06:43",
+          "lat": 28.6469,
+          "lon": 77.3389,
+          "load_after_stop_kg": 0.0
+        }
+      ],
+      "legs": [
+        {
+          "from_stop": "WH001",
+          "to_stop": "STR002",
+          "from_name": "MAQ Central Distribution Hub",
+          "to_name": "Reliance Fresh - Vaishali Ghaziabad",
+          "from_lat": 28.4744,
+          "from_lon": 77.504,
+          "to_lat": 28.6469,
+          "to_lon": 77.3389,
+          "distance_km": 42.6,
+          "duration_min": 42.6,
+          "eta": "06:43"
+        },
+        {
+          "from_stop": "STR002",
+          "to_stop": "WH001",
+          "from_name": "Reliance Fresh - Vaishali Ghaziabad",
+          "to_name": "MAQ Central Distribution Hub",
+          "from_lat": 28.6469,
+          "from_lon": 77.3389,
+          "to_lat": 28.4744,
+          "to_lon": 77.504,
+          "distance_km": 39.76,
+          "duration_min": 41.4,
+          "eta": "07:24"
+        }
+      ],
+      "distance_km": 82.36,
+      "duration_min": 84.1,
+      "fuel_cost_inr": 625.94,
+      "co2_emissions_kg": 24.71,
+      "capacity_used_pct": 10.0
+    }
+  ],
+  "totals": {
+    "total_distance_km": 82.36,
+    "total_duration_min": 84.1,
+    "total_fuel_cost_inr": 625.94,
+    "total_co2_emissions_kg": 24.71,
+    "makespan_min": 84.1,
+    "on_time_pct": 100.0
+  },
+  "effectiveness_score": 10.0,
+  "status": "approved",
+  "approved_at": "2026-07-17T10:08:07+05:30",
+  "approved_by": "Warehouse Dispatch Manager"
+}

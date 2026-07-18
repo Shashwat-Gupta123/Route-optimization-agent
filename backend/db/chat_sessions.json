@@ -1,0 +1,251 @@
+{
+  "sessions": {
+    "7ad5bd4c-6f32-421b-bdab-961b5603c47f": {
+      "started_at": "2026-07-17T10:56:03+05:30",
+      "last_active_at": "2026-07-17T11:07:22+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "How many shipments are pending today?",
+          "timestamp": "2026-07-17T10:56:15+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "**Pending shipments today (as of today): 7**.\n\nFollow-ups you can ask:\n- How many of today’s pending shipments are **high priority**?\n- Show pending shipments **by zone** (Noida vs Ghaziabad vs Greater Noida).\n- What’s the **total pending weight** today and which vehicles have capacity available?",
+          "timestamp": "2026-07-17T10:56:15+05:30",
+          "sources_used": [],
+          "suggested_follow_ups": [
+            "How many of today’s pending shipments are **high priority**?",
+            "What’s the **total pending weight** today and which vehicles have capacity available?"
+          ]
+        },
+        {
+          "turn_id": 3,
+          "role": "user",
+          "message": "What’s the **total pending weight** today and which vehicles have capacity available?",
+          "timestamp": "2026-07-17T11:01:02+05:30"
+        },
+        {
+          "turn_id": 4,
+          "role": "assistant",
+          "message": "- **Total pending weight today (as of today): 1,330 kg** (7 pending shipments)\n\n**Vehicles with capacity available (status = available, as of today):**\n- **VEH001** (Mini Truck – Tata Ace) — **750 kg** capacity — Driver: **Ramesh Kumar**\n- **VEH002** (Pickup Van – Mahindra Bolero) — **1,000 kg** capacity — Driver: **Suresh Yadav**\n\n**Quick capacity check (vs pending weight, as of today):**\n- Combined available capacity: **1,750 kg** → covers **1,330 kg** pending (by weight)\n\nFollow-ups you can ask:\n- List the **pending shipments by zone** (Noida / Ghaziabad / Greater Noida).\n- Which pending shipments are **high priority + special handling** (chilled)?\n- Show the **best route plan (fastest/cheapest/balanced) for today** for these 7 shipments.",
+          "timestamp": "2026-07-17T11:01:02+05:30",
+          "sources_used": [
+            "query_shipments_tool",
+            "query_fleet_tool"
+          ],
+          "suggested_follow_ups": [
+            "Which pending shipments are **high priority + special handling** (chilled)?"
+          ]
+        },
+        {
+          "turn_id": 5,
+          "role": "user",
+          "message": "Which pending shipments are **high priority + special handling** (chilled)?",
+          "timestamp": "2026-07-17T11:07:22+05:30"
+        },
+        {
+          "turn_id": 6,
+          "role": "assistant",
+          "message": "**Pending shipments that are _high priority + special handling (chilled)_ (as of today): 2 shipments, 330 kg total**\n\n- **SHP1002** — **150 kg** — Store: **Reliance Fresh - Vaishali Ghaziabad** (Ghaziabad)  \n  - Window: **08:00–10:30**  \n  - Items: **Dairy products – chilled** (qty **60**)  \n  - Special handling: **Yes (chilled)**\n\n- **SHP1005** — **180 kg** — Store: **More Supermarket - Kaushambi** (Ghaziabad)  \n  - Window: **08:30–11:00**  \n  - Items include: **Dairy products – chilled** (qty **40**)  \n  - Special handling: **Yes (chilled)**\n\nFollow-ups you can ask:\n- Show **all pending special-handling** shipments today (any priority).\n- Which **vehicles/routes** are currently assigned **chilled loads** (if any) today?\n- List pending shipments **by zone** with **time windows** to plan dispatch order.",
+          "timestamp": "2026-07-17T11:07:22+05:30",
+          "sources_used": [
+            "query_shipments_tool"
+          ],
+          "suggested_follow_ups": [
+            "Which **vehicles/routes** are currently assigned **chilled loads** (if any) today?"
+          ]
+        }
+      ]
+    },
+    "test-001": {
+      "started_at": "2026-07-17T10:56:10+05:30",
+      "last_active_at": "2026-07-17T10:58:54+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "How many shipments are pending today?",
+          "timestamp": "2026-07-17T10:56:16+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "**Pending shipments today (as of today): 7**  \n- Total pending weight: **1330.0 kg**\n\nFollow-ups:\n1) Want the **pending split by zone** (Noida vs Ghaziabad vs Greater Noida)?  \n2) Show me **high-priority pending** shipments only.  \n3) Which **stores** have the most pending shipments today?",
+          "timestamp": "2026-07-17T10:56:16+05:30",
+          "sources_used": [],
+          "suggested_follow_ups": [
+            ") Want the **pending split by zone** (Noida vs Ghaziabad vs Greater Noida)?",
+            ") Which **stores** have the most pending shipments today?"
+          ]
+        },
+        {
+          "turn_id": 3,
+          "role": "user",
+          "message": "How many shipments are pending today?",
+          "timestamp": "2026-07-17T10:58:54+05:30"
+        },
+        {
+          "turn_id": 4,
+          "role": "assistant",
+          "message": "**Pending shipments today (as of today): 7**  \n- **Total pending weight:** **1330.0 kg**\n\nFollow-ups:\n1) Show **pending shipments split by zone** (Noida vs Ghaziabad vs Greater Noida).  \n2) List only **high-priority pending** shipments (with store + time windows).  \n3) Which **stores** have the most pending shipments today?",
+          "timestamp": "2026-07-17T10:58:54+05:30",
+          "sources_used": [
+            "query_shipments_tool"
+          ],
+          "suggested_follow_ups": [
+            ") Which **stores** have the most pending shipments today?"
+          ]
+        }
+      ]
+    },
+    "test-001b": {
+      "started_at": "2026-07-17T10:59:12+05:30",
+      "last_active_at": "2026-07-17T10:59:31+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "How many shipments are pending today?",
+          "timestamp": "2026-07-17T10:59:16+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "As of **today**, there are **7 pending shipments**.\n\nFollow-ups you can ask:\n- How many of today’s pending shipments are **high priority**?\n- What’s the **total pending weight** today (kg) and by zone (Noida/Ghaziabad/Greater Noida)?\n- Which pending shipments have the **earliest delivery deadline**?",
+          "timestamp": "2026-07-17T10:59:16+05:30",
+          "sources_used": [
+            "query_shipments_tool"
+          ],
+          "suggested_follow_ups": [
+            "How many of today’s pending shipments are **high priority**?",
+            "What’s the **total pending weight** today (kg) and by zone (Noida/Ghaziabad/Greater Noida)?",
+            "Which pending shipments have the **earliest delivery deadline**?"
+          ]
+        },
+        {
+          "turn_id": 3,
+          "role": "user",
+          "message": "Which one is heaviest?",
+          "timestamp": "2026-07-17T10:59:31+05:30"
+        },
+        {
+          "turn_id": 4,
+          "role": "assistant",
+          "message": "As of **today**, the **heaviest pending shipment** is:\n\n- **SHP1003** — **320 kg**  \n  Store: **DMart - Sector 62 Noida (Noida)**  \n  Delivery window: **10:00–14:00**\n\nFollow-ups you can ask:\n- List all pending shipments **sorted by weight** (heaviest to lightest).\n- What’s the **total pending weight by zone** (Noida/Ghaziabad/Greater Noida) today?\n- Are any **high-priority** pending shipments close to their latest delivery time?",
+          "timestamp": "2026-07-17T10:59:31+05:30",
+          "sources_used": [
+            "query_shipments_tool"
+          ],
+          "suggested_follow_ups": [
+            "What’s the **total pending weight by zone** (Noida/Ghaziabad/Greater Noida) today?",
+            "Are any **high-priority** pending shipments close to their latest delivery time?"
+          ]
+        }
+      ]
+    },
+    "test-002": {
+      "started_at": "2026-07-17T10:59:50+05:30",
+      "last_active_at": "2026-07-17T10:59:55+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "What was our on-time percentage last week?",
+          "timestamp": "2026-07-17T10:59:55+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "**On-time % last week (2026-07-06 to 2026-07-12): 91.4%** (as per KPI summary for that 7-day range).\n\nFollow-ups:\n- Want the **on-time % by zone/store** for last week?\n- Should I pull **planned vs actual distance** and the biggest deviation routes for last week?\n- Do you want the **trend vs the previous week** (week-over-week change)?",
+          "timestamp": "2026-07-17T10:59:55+05:30",
+          "sources_used": [
+            "compute_kpi_tool"
+          ],
+          "suggested_follow_ups": [
+            "Want the **on-time % by zone/store** for last week?",
+            "Should I pull **planned vs actual distance** and the biggest deviation routes for last week?",
+            "Do you want the **trend vs the previous week** (week-over-week change)?"
+          ]
+        }
+      ]
+    },
+    "test-003": {
+      "started_at": "2026-07-17T11:00:05+05:30",
+      "last_active_at": "2026-07-17T11:00:07+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "What is the capital of France?",
+          "timestamp": "2026-07-17T11:00:07+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "I don’t have a data source for that yet.\n\nFollow-ups you can ask:\n- What’s the status of today’s shipments (pending vs assigned vs delivered)?\n- Which vehicles are currently en route with ETA deviations?\n- Show any unacknowledged critical alerts right now.",
+          "timestamp": "2026-07-17T11:00:07+05:30",
+          "sources_used": [],
+          "suggested_follow_ups": [
+            "What’s the status of today’s shipments (pending vs assigned vs delivered)?",
+            "Which vehicles are currently en route with ETA deviations?"
+          ]
+        }
+      ]
+    },
+    "test-004": {
+      "started_at": "2026-07-17T11:00:17+05:30",
+      "last_active_at": "2026-07-17T11:00:22+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "Approve todays balanced plan",
+          "timestamp": "2026-07-17T11:00:22+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "I can’t approve routes from here (read-only), and I also don’t have today’s plan loaded yet.\n\nWhat you need to do in the UI:\n- Open **Route Planner**\n- Select **Today → Plan: “balanced”**\n- Click **Approve Route / Approve Plan** (top-right on the plan view)\n- Confirm the approval prompt\n\nIf you want, I can first fetch **today’s balanced plan** and summarize what you’re approving (routes, stops, distance, on-time %, capacity, any overloads).  \n\nFollow-ups (pick one):\n- “Show me today’s balanced plan summary.”\n- “Any critical alerts or ETA deviations right now before I approve?”\n- “Compare today’s balanced vs fastest plan totals.”",
+          "timestamp": "2026-07-17T11:00:22+05:30",
+          "sources_used": [],
+          "suggested_follow_ups": []
+        }
+      ]
+    },
+    "1615ca69-57e3-45d3-a4ea-6ba96783411d": {
+      "started_at": "2026-07-17T11:23:07+05:30",
+      "last_active_at": "2026-07-17T11:23:13+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "How many shipments are pending today?",
+          "timestamp": "2026-07-17T11:23:13+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "**Pending shipments today (current view): 7**  \n- **Total pending weight:** 1330.0 kg (today)  \n\nFollow-ups you can ask:\n1. Show me the pending shipments split by **zone** (Noida/Ghaziabad/Greater Noida).\n2. Which **high-priority** shipments are still pending today?\n3. Are these pending shipments already **assigned to any vehicle/route plan** today?",
+          "timestamp": "2026-07-17T11:23:13+05:30",
+          "sources_used": [
+            "query_shipments_tool"
+          ],
+          "suggested_follow_ups": [
+            "Which **high-priority** shipments are still pending today?",
+            "Are these pending shipments already **assigned to any vehicle/route plan** today?"
+          ]
+        }
+      ]
+    }
+  }
+}

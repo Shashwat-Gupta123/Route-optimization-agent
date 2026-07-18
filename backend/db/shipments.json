@@ -1,0 +1,168 @@
+[
+  {
+    "shipment_id": "SHP1001",
+    "store_id": "STR001",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-15T18:30:00+05:30",
+    "items": [
+      {
+        "sku": "SKU-GROC-001",
+        "description": "Packaged snacks - assorted",
+        "quantity": 120
+      },
+      {
+        "sku": "SKU-BEV-014",
+        "description": "Bottled beverages - 1L",
+        "quantity": 80
+      }
+    ],
+    "weight_kg": 210,
+    "volume_m3": 1.2,
+    "earliest_delivery_time": "09:00",
+    "latest_delivery_time": "12:00",
+    "priority": "normal",
+    "special_handling": false,
+    "status": "pending"
+  },
+  {
+    "shipment_id": "SHP1002",
+    "store_id": "STR002",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-15T17:10:00+05:30",
+    "items": [
+      {
+        "sku": "SKU-DAIRY-007",
+        "description": "Dairy products - chilled",
+        "quantity": 60
+      }
+    ],
+    "weight_kg": 150,
+    "volume_m3": 0.9,
+    "earliest_delivery_time": "08:00",
+    "latest_delivery_time": "10:30",
+    "priority": "high",
+    "special_handling": true,
+    "status": "pending"
+  },
+  {
+    "shipment_id": "SHP1003",
+    "store_id": "STR003",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-15T19:00:00+05:30",
+    "items": [
+      {
+        "sku": "SKU-GROC-002",
+        "description": "Packaged staples - rice/atta",
+        "quantity": 200
+      },
+      {
+        "sku": "SKU-HOME-021",
+        "description": "Home care products",
+        "quantity": 45
+      }
+    ],
+    "weight_kg": 320,
+    "volume_m3": 2.1,
+    "earliest_delivery_time": "10:00",
+    "latest_delivery_time": "14:00",
+    "priority": "normal",
+    "special_handling": false,
+    "status": "pending"
+  },
+  {
+    "shipment_id": "SHP1004",
+    "store_id": "STR004",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-15T18:00:00+05:30",
+    "items": [
+      {
+        "sku": "SKU-GROC-001",
+        "description": "Packaged snacks - assorted",
+        "quantity": 90
+      },
+      {
+        "sku": "SKU-BEV-014",
+        "description": "Bottled beverages - 1L",
+        "quantity": 50
+      },
+      {
+        "sku": "SKU-HOME-021",
+        "description": "Home care products",
+        "quantity": 30
+      }
+    ],
+    "weight_kg": 275,
+    "volume_m3": 1.6,
+    "earliest_delivery_time": "09:30",
+    "latest_delivery_time": "13:00",
+    "priority": "normal",
+    "special_handling": false,
+    "status": "pending"
+  },
+  {
+    "shipment_id": "SHP1005",
+    "store_id": "STR005",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-15T16:45:00+05:30",
+    "items": [
+      {
+        "sku": "SKU-DAIRY-007",
+        "description": "Dairy products - chilled",
+        "quantity": 40
+      },
+      {
+        "sku": "SKU-GROC-002",
+        "description": "Packaged staples - rice/atta",
+        "quantity": 100
+      }
+    ],
+    "weight_kg": 180,
+    "volume_m3": 1.0,
+    "earliest_delivery_time": "08:30",
+    "latest_delivery_time": "11:00",
+    "priority": "high",
+    "special_handling": true,
+    "status": "pending"
+  },
+  {
+    "shipment_id": "SHP1006",
+    "store_id": "STR006",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-15T20:15:00+05:30",
+    "items": [
+      {
+        "sku": "SKU-GROC-001",
+        "description": "Packaged snacks - assorted",
+        "quantity": 60
+      }
+    ],
+    "weight_kg": 95,
+    "volume_m3": 0.6,
+    "earliest_delivery_time": "09:00",
+    "latest_delivery_time": "17:00",
+    "priority": "low",
+    "special_handling": false,
+    "status": "pending"
+  },
+  {
+    "shipment_id": "SHP1007",
+    "store_id": "STR002",
+    "warehouse_id": "WH001",
+    "order_date": "2026-07-16",
+    "created_at": "2026-07-16T14:57:08+05:30",
+    "items": [],
+    "weight_kg": 100.0,
+    "volume_m3": 0.0,
+    "earliest_delivery_time": "00:00",
+    "latest_delivery_time": "13:00",
+    "priority": "high",
+    "special_handling": false,
+    "status": "pending"
+  }
+]

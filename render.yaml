@@ -1,0 +1,27 @@
+services:
+  # Backend FastAPI Service
+  - type: web
+    name: route-optimizer-backend
+    env: python
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      # You will need to add your actual API keys via the Render Dashboard
+      # - key: OPEN_ROUTER_API_KEY
+      # - key: AZURE_OPEN_AI_KEY
+      # - key: SMTP_PASS
+      # - key: etc...
+
+  # Frontend React/Vite Static Site
+  - type: static
+    name: route-optimizer-frontend
+    buildCommand: "cd frontend/route-optimization && npm install && npm run build"
+    staticPublishPath: frontend/route-optimization/dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18.18.0
+      # Ensure frontend knows where to reach the backend
+      # - key: VITE_API_URL
+      #   value: https://route-optimizer-backend.onrender.com
