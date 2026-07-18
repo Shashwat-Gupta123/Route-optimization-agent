@@ -6,6 +6,7 @@
 ![Python](https://img.shields.io/badge/Backend-Python%20%2F%20FastAPI-3776AB)
 ![React](https://img.shields.io/badge/Frontend-React%2019%20%2F%20Vite-61DAFB)
 ![OR--Tools](https://img.shields.io/badge/Optimization-Google%20OR--Tools-4285F4)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-D6001C?style=flat&logo=render&logoColor=white)](https://roa-yzbe.onrender.com/login)
 
 **An agentic AI system that plans, monitors, and explains delivery routes for a
 warehouse shipping to multiple retail stores** — combining constraint-based
@@ -15,6 +16,10 @@ natural-language querying.
 
 Built end-to-end: routing engine, live fleet map, KPI dashboard, automated
 alerting, and a conversational assistant — all in one dispatch console.
+
+**🔗 Live Demo:** [roa-yzbe.onrender.com](https://roa-yzbe.onrender.com/login)
+*(hosted on Render's free tier — the backend may take ~30–60s to wake up on
+first load)*
 
 ---
 
@@ -243,6 +248,8 @@ The dashboard will be available at `http://localhost:5173`.
 
 ## ☁️ Deployment (Render)
 
+**Live instance:** [https://roa-yzbe.onrender.com/login](https://roa-yzbe.onrender.com/login)
+
 This project is configured for one-click deployment on
 [Render](https://render.com) via the provided `render.yaml` Blueprint.
 
@@ -275,7 +282,8 @@ application development.
 This is an independent project built to explore agentic AI system design for
 logistics/supply-chain operations; it is not an official MAQ Software product.
 
-*Add your LinkedIn / GitHub / portfolio links here.*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shashwatkrgupta-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shashwatkrgupta/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_Site-000000?style=flat&logo=vercel&logoColor=white)](https://my-portfolio-phi-three-13.vercel.app/)
 
 ---
 
