@@ -15,8 +15,9 @@ services:
       # - key: etc...
 
   # Frontend React/Vite Static Site
-  - type: static
+  - type: web
     name: route-optimizer-frontend
+    env: static
     buildCommand: "cd frontend/route-optimization && npm install && npm run build"
     staticPublishPath: frontend/route-optimization/dist
     envVars:
