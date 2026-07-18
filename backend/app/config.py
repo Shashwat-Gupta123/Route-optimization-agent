@@ -65,10 +65,7 @@ AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPEN_AI_API_VERSION", "2024-12-01-pr
 # --- Server / CORS ---
 APP_HOST = os.getenv("APP_HOST", "0.0.0.0")
 APP_PORT = int(os.getenv("APP_PORT", "8000"))
-# Vite dev server origins allowed to call this API.
-CORS_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:5174",
-    "http://127.0.0.1:5174",
-]
+# Vite dev server origins and production frontend domains. 
+# Defaults to "*" to allow any frontend (Render, Vercel, Netlify) to connect.
+cors_env = os.getenv("CORS_ORIGINS", "*")
+CORS_ORIGINS = [origin.strip() for origin in cors_env.split(",")]
