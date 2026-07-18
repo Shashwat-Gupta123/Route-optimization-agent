@@ -64,7 +64,7 @@ def weather_correlation() -> dict:
 def send_report(body: SendReportRequest) -> SendReportResponse:
     """Email a KPI summary and post a dashboard digest alert."""
     try:
-        result = analytics_service.send_report(body.from_, body.to)
+        result = analytics_service.send_report(body.from_, body.to, body.email)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc))
     return SendReportResponse(

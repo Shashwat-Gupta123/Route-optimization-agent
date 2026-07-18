@@ -177,6 +177,7 @@ class ReoptimizeConfirmResponse(BaseModel):
 class SendReportRequest(BaseModel):
     from_: str = Field(alias="from")
     to: str
+    email: Optional[str] = None
 
     model_config = {"populate_by_name": True}
 

@@ -487,8 +487,8 @@ def _build_html_report(
 </html>"""
 
 
-def send_report(from_date: str, to_date: str) -> Dict[str, Any]:
-    """Email an HTML KPI dashboard to the dispatch manager via Power Automate."""
+def send_report(from_date: str, to_date: str, email: Optional[str] = None) -> Dict[str, Any]:
+    """Email an HTML KPI dashboard to the provided email (or fallback to manager)."""
     data = summary(from_date, to_date)
     totals = data["totals"]
     eta = data["eta_accuracy"]
@@ -514,11 +514,11 @@ def send_report(from_date: str, to_date: str) -> Dict[str, Any]:
         cost_data=cost_data,
     )
 
-    manager_email = get_config().get("alerting", {}).get("dispatch_manager_email")
+    manager_email = email if email else get_config().get("alerting", {}).get("dispatch_manager_email")
     alert = send_alert_tool(
         alert_type="weekly_report",
         severity="info",
-        message=f"Weekly report ({from_date} to {to_date}) generated and sent to dispatch manager.",
+        message=f"Weekly report ({from_date} to {to_date}) generated and sent to {manager_email}.",
         channel=["email", "dashboard"],
         email_to=manager_email,
         email_subject=f"Route Optimization Weekly Report — {from_date} to {to_date}",

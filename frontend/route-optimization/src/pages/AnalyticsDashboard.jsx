@@ -68,10 +68,13 @@ export default function AnalyticsDashboard() {
     }, []);
 
     const handleSendReport = async () => {
+        const userEmail = window.prompt("Enter the email address to send the report to:");
+        if (!userEmail) return; // User cancelled or left it blank
+        
         setSending(true);
         try {
-            await sendReport(from, to);
-            push("Report sent to dispatch manager.", "success");
+            await sendReport(from, to, userEmail);
+            push("Report sent to " + userEmail + ".", "success");
             refreshAlerts();
         } catch (err) {
             setError(err);

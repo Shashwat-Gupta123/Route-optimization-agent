@@ -246,6 +246,29 @@
           ]
         }
       ]
+    },
+    "fc49d173-6585-42e4-8eb5-ffacf3e6ccbe": {
+      "started_at": "2026-07-18T13:34:40+05:30",
+      "last_active_at": "2026-07-18T13:34:50+05:30",
+      "page_context": null,
+      "turns": [
+        {
+          "turn_id": 1,
+          "role": "user",
+          "message": "How many shipments are pending today?",
+          "timestamp": "2026-07-18T13:34:50+05:30"
+        },
+        {
+          "turn_id": 2,
+          "role": "assistant",
+          "message": "**Pending shipments today (as of today): 7**  \n- **Total pending weight:** 1330.0 kg\n\nFollow-ups you can ask:\n- “Break down today’s pending shipments by zone (Noida vs Ghaziabad vs Greater Noida).”\n- “Which pending shipments are high priority and what are their delivery windows?”\n- “Are any pending shipments already assigned to a vehicle?”",
+          "timestamp": "2026-07-18T13:34:50+05:30",
+          "sources_used": [
+            "query_shipments_tool"
+          ],
+          "suggested_follow_ups": []
+        }
+      ]
     }
   }
 }

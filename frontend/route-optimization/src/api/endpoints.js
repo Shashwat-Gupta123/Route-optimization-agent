@@ -62,8 +62,8 @@ export const getCostBreakdown = (from, to) =>
         .then((r) => r.data);
 export const getWeatherCorrelation = () =>
     client.get("/api/kpis/weather-correlation").then((r) => r.data);
-export const sendReport = (from, to) =>
-    client.post("/api/kpis/send-report", { from, to }).then((r) => r.data);
+export const sendReport = (from, to, email) =>
+    client.post("/api/kpis/send-report", { from, to, email }).then((r) => r.data);
 
 // --- Component 5: Chat Assistant --------------------------------------------
 export const postChat = (message, conversationId, pageContext = null) =>
